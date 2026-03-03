@@ -1,26 +1,30 @@
-/**
- * OOPSBannerApp
- * UC4: Display OOPS banner using Array and Loop
- * @author Vedansh
- * @version 4.0
- */
+// UC5 - OOPS Banner App
+// Using Array Initialization with String.join() and Enhanced For Loop
+
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        String[] banner = {
+        // Declare and initialize array in a single statement
+        String[] bannerLines = {
 
-            String.join("", " *****    *****    *****    ***** "),
-            String.join("", "*     *  *     *  *     *  *     *"),
-            String.join("", "*     *  *     *  *     *  *      "),
-            String.join("", "*     *  *     *  *****    *****  "),
-            String.join("", "*     *  *     *  *            *  "),
-            String.join("", "*     *  *     *  *            *  "),
-            String.join("", " *****    *****    *      *****   ")
+                String.join("", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*",
+                                   "*", "*", "*", "*", "*", "*", "*", "*", "*", "*"),
 
+                String.join("", "*", "                                      ", "*"),
+
+                String.join("", "*", "        WELCOME TO OOPS APP            ", "*"),
+
+                String.join("", "*", "        OBJECT ORIENTED PROGRAM        ", "*"),
+
+                String.join("", "*", "                                      ", "*"),
+
+                String.join("", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*",
+                                   "*", "*", "*", "*", "*", "*", "*", "*", "*", "*")
         };
 
-        for (String line : banner) {
+        // Enhanced for loop to print banner
+        for (String line : bannerLines) {
             System.out.println(line);
         }
     }
